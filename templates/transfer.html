@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Transfer Money</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Transfer Money</h1>
+        </header>
+
+        <main>
+            <form method="POST">
+                <label for="recipient">Recipient Username:</label>
+                <input type="text" name="recipient" required>
+                <label for="amount">Amount to Transfer:</label>
+                <input type="number" name="amount" required>
+                <button type="submit">Transfer</button> <br>
+                <button onclick="window.history.back()">Go Back</button>
+
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Money Transfer System. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

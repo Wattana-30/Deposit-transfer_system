@@ -1,0 +1,6 @@
+flask
+flask-mysqldb
+
+
+# docker-compose down  # ปิดคอนเทนเนอร์ที่กำลังทำงาน
+# docker-compose up --build   # สร้างคอนเทนเนอร์ใหม่

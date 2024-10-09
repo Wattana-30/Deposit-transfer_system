@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Deposit Money</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Deposit Money</h1>
+        </header>
+
+        <main>
+            <form action="/deposit" method="POST">
+                <input type="text" name="amount" placeholder="Enter amount" required> <!-- เพิ่ม required เพื่อให้ฟอร์มไม่ว่าง -->
+                <button type="submit">Deposit</button> <br>
+                <button onclick="window.history.back()">Go Back</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Money Transfer System. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Money Transfer System</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Money Transfer System</h1>
+            <nav>
+                <ul>
+                    <li><a href="/register">Register</a></li>
+                    <li><a href="/login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h2>Manage Your Finances Easily</h2>
+                <p>Our platform provides a secure way to transfer and deposit money.</p>
+                <a href="/register" class="button">Get Started</a> <!-- ใช้ <a> แทน <button> -->
+            </section>
+        </main>
+    </div>
+</body>
+</html>
